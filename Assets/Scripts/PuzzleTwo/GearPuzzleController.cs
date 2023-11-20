@@ -218,7 +218,7 @@ public class GearPuzzleController : NetworkBehaviour {
         UpdateTMPTextServerRpc(newValue);
     }
 
-    [ServerRpc]
+    [ServerRpc (RequireOwnership = false)]
     private void UpdateTMPTextServerRpc(string newText) {
         // Update the TMP text on the server
         TMPText.Value = newText;
