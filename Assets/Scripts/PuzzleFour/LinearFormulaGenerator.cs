@@ -9,12 +9,12 @@ public class LinearFormulaGenerator : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        
+
     }
 
     // Update is called once per frame
     void Update() {
-        
+
     }
 
     private Vector2 GenerateAAndB() {
@@ -29,7 +29,7 @@ public class LinearFormulaGenerator : MonoBehaviour {
     private string BuildFormulaFromAAndB(int valueA, int valueB) {
         string returnValue = valueA.ToString() + "x";
         if(valueB < 0) {
-            returnValue = returnValue + " - " + (valueB*-1).ToString();
+            returnValue = returnValue + " - " + (valueB * -1).ToString();
         } else {
             returnValue = returnValue + " + " + valueB.ToString();
         }
@@ -37,5 +37,11 @@ public class LinearFormulaGenerator : MonoBehaviour {
         return returnValue;
     }
 
-    //private List
+    /*private int[] XPointsOnGraph() {
+        int[] xPoints;
+
+
+
+        return xPoints;
+    }*/
 }
